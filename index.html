@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supabase Todo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Supabase Todo App</h1>
+        <form id="todo-form">
+            <input type="text" id="todo-input" placeholder="新しいタスクを追加" required>
+            <button type="submit">追加</button>
+        </form>
+        <ul id="todo-list">
+            <!-- Todos will be loaded here -->
+        </ul>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="script.js"></script>
+</body>
+</html>
