@@ -1,10 +1,8 @@
-import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm';
-
 // Supabaseクライアントを初期化します。
-const supabaseUrl = 'https://dvdhnqlpzwkujhkouxxc.supabase.co';
-const supabaseAnonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImR2ZGhucWxwendrdWpoa291eHhjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTM3OTYwNjEsImV4cCI6MjA2OTM3MjA2MX0.ttcjEJa5VL880Vbcm5DS4xJl38VLcDNh3HhMC56-BQM';
+const supabaseUrl = 'https://twozsakzkqrfidzyoyyg.supabase.co';
+const supabaseAnonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR3b3pzYWt6a3FyZmlkenlveXlnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTM4MjQ5NTgsImV4cCI6MjA2OTQwMDk1OH0.UR5cLucV5yKAmflUlHmWX1BS4ApJj_dAkmtNanhGaMQ';
 
-const supabase = createClient(supabaseUrl, supabaseAnonKey);
+const supabase = supabase.createClient(supabaseUrl, supabaseAnonKey);
 
 const todoForm = document.getElementById('todo-form');
 const todoInput = document.getElementById('todo-input');
