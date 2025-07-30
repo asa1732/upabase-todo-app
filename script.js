@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const supabaseUrl = 'https://twozsakzkqrfidzyoyyg.supabase.co';
     const supabaseAnonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR3b3pzYWt6a3FyZmlkenlveXlnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTM4MjQ5NTgsImV4cCI6MjA2OTQwMDk1OH0.UR5cLucV5yKAmflUlHmWX1BS4ApJj_dAkmtNanhGaMQ';
 
-    const supabase = Supabase.createClient(supabaseUrl, supabaseAnonKey);
+    const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
     const todoForm = document.getElementById('todo-form');
     const todoInput = document.getElementById('todo-input');
